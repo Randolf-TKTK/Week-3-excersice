@@ -25,12 +25,12 @@ footer {
 }
 
 h1 {
-    animation: slideIn 1s ease-out infinite alternate;
+    animation: slideIn 2s ease-out infinite alternate;
 }
 
 ul {
     opacity: 0;
-    animation: fadeIn 1.5s ease-in forwards  pulse 3s ease-in-out infinite alternate;;
+    animation: fadeIn 1.5s ease-in forwards, pulse 3s ease-in-out infinite alternate;
 }
 
 ol {
@@ -40,7 +40,7 @@ ol {
 
 footer {
     opacity: 0;
-    animation: fadeIn 2s ease-in 1s forwards  colorChange 5s linear infinite alternate;;
+    animation: fadeIn 2s ease-in 1s forwards, colorChange 5s linear infinite alternate;
 }
 
 @keyframes slideIn {
