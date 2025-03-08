@@ -23,3 +23,67 @@ footer {
     font-size: 14px;
     color: #666;
 }
+
+h1 {
+    animation: slideIn 1s ease-out infinite alternate;
+}
+
+ul {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards  pulse 3s ease-in-out infinite alternate;;
+}
+
+ol {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in 0.5s forwards, sideMove 4s ease-in-out infinite alternate;
+}
+
+footer {
+    opacity: 0;
+    animation: fadeIn 2s ease-in 1s forwards  colorChange 5s linear infinite alternate;;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes sideMove {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: #666;
+    }
+    to {
+        color: #333;
+    }
+}
